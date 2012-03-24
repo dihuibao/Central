@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ivysettings>
+	<settings defaultResolver="local" />
+	<resolvers>
+		<filesystem name="local" checkmodified="true">
+			<artifact pattern="D:/ivyrep/myrepository/no-namespace/[organisation]/[module]/[type]s/[artifact]-[revision].[ext]"/>
+			<ivy pattern="D:/ivyrep/myrepository/no-namespace/[organisation]/[module]/ivys/ivy-[revision].xml"/>
+		</filesystem>
+	</resolvers>
+</ivysettings>
+

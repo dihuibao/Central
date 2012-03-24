@@ -1,0 +1,9 @@
+<ivy-module version="2.0">
+    <info organisation="zell.abalone" module="test"/>
+    <dependencies>
+        <dependency org="commons-lang" name="commons-lang" rev="2.0"/>
+        <dependency org="commons-cli" name="commons-cli" rev="1.0"/>
+        <dependency org="org.springframework" name="spring-test" rev="3.0.6.RELEASE"/>
+    </dependencies>
+</ivy-module>
+
