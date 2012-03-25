@@ -4,6 +4,9 @@
         <dependency org="commons-lang" name="commons-lang" rev="2.0"/>
         <dependency org="commons-cli" name="commons-cli" rev="1.0"/>
         <dependency org="org.springframework" name="spring-test" rev="3.0.6.RELEASE"/>
+        <dependency org="org.aspectj" name="aspectjweaver" rev="1.6.12"/>
+        <dependency org="org.aspectj" name="aspectjtools" rev="1.6.12"/>
+        <dependency org="org.aspectj" name="aspectjrt" rev="1.6.12"/>
     </dependencies>
 </ivy-module>
 
