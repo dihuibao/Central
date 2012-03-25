@@ -1,7 +1,7 @@
 package com.dihuib.aspectj;
 
 public aspect ProfilingAspect {
-	pointcut publicOperation() : execution(public * *.*());
+	pointcut publicOperation() : execution(* MessageCommunicator.*(..));
 
 	Object around() : publicOperation() {
 		long start = System.nanoTime();
