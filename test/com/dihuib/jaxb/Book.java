@@ -39,5 +39,4 @@ public class Book {
 		this.isbn = isbn;
 	}
 	
-	
 }
