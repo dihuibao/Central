@@ -7,7 +7,12 @@
         <dependency org="org.aspectj" name="aspectjweaver" rev="1.6.12"/>
         <dependency org="org.aspectj" name="aspectjtools" rev="1.6.12"/>
         <dependency org="org.aspectj" name="aspectjrt" rev="1.6.12"/>
-        <!-- <dependency org="javax.jdo" name="jdo-api" rev="3.0.1"/> -->
+        <dependency org="com.sun.jersey" name="jersey-core" rev="1.13-b01"/>
+        <dependency org="com.sun.jersey" name="jersey-server" rev="1.13-b01"/>
+        <dependency org="com.sun.jersey" name="jersey-grizzly2" rev="1.13-b01"/>
+        <dependency org="org.springframework.batch" name="spring-batch-core" rev="2.1.8.RELEASE"/>
+        <dependency org="com.google.protobuf" name="protobuf-java" rev="2.4.1"/>
+        <dependency org="com.google.guava" name="guava" rev="13.0-rc1"/>
     </dependencies>
 </ivy-module>
 

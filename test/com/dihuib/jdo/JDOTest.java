@@ -1,8 +1,5 @@
 package com.dihuib.jdo;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
 import javax.jdo.JDOException;
 import javax.jdo.PersistenceManager;
 
