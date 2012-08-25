@@ -3,11 +3,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?ivyXmlPath=ivy.xml&amp;confs=*&amp;ivySettingsPath=%24%7Bworkspace_loc%3ACentral%2Fivy-settings.xml%7D&amp;loadSettingsOnDemand=false&amp;propertyFiles=%24%7Bworkspace_loc%3ACentral%2Fbuild.properties%7D"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="D:/eclipse/plugins/org.aspectj.runtime_1.6.12.20110613132200.jar"/>
-	<classpathentry kind="lib" path="D:/objectdb-2.3.7/bin/objectdb.jar"/>
-	<classpathentry kind="lib" path="D:/jmx-1_2_1-bin/lib/jmxri.jar"/>
-	<classpathentry kind="lib" path="D:/jmx-1_2_1-bin/lib/jmxtools.jar"/>
-	<classpathentry kind="con" path="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?ivyXmlPath=ivy.xml&amp;confs=*&amp;ivySettingsPath=%24%7Bworkspace_loc%3ACentral%2Fivy-settings.xml%7D&amp;loadSettingsOnDemand=false&amp;propertyFiles="/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
