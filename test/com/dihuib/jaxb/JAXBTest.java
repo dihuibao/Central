@@ -1,11 +1,15 @@
 package com.dihuib.jaxb;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 
@@ -46,5 +50,16 @@ public class JAXBTest {
 		Marshaller m = context.createMarshaller();
 		m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 		m.marshal(bookStore, System.out);
+	}
+	
+	@Test
+	public void testUnmarshall() throws JAXBException, FileNotFoundException {
+		
+		JAXBContext context = JAXBContext.newInstance(Book.class);
+		Unmarshaller um = context.createUnmarshaller();
+		
+		Book book = (Book)um.unmarshal(new FileInputStream("test/com/dihuib/jaxb/book.xml"));
+		
+		System.out.println("publicher: "+book.getPublisher());
 	}
 }
