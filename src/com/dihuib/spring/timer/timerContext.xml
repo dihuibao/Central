@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.springframework.org/schema/beans"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" >
+
+    <bean
+        id="timerTask"
+        class="com.dihuib.spring.timer.MySchedule" />
+
+    <bean
+        id="scheduledTask"
+        class="org.springframework.scheduling.timer.ScheduledTimerTask" >
+
+        <property
+            name="delay"
+            value="10000" >
+        </property>
+
+        <property
+            name="period"
+            value="5000" >
+        </property>
+
+        <property
+            name="timerTask"
+            ref="timerTask" >
+        </property>
+    </bean>
+
+    <bean
+        id="timerFactory"
+        class="org.springframework.scheduling.timer.TimerFactoryBean" >
+        <property name="scheduledTimerTasks" >
+            <list>
+                <ref local="scheduledTask" />
+            </list>
+        </property>
+    </bean>
+
+</beans>

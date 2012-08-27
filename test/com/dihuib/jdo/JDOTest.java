@@ -1,13 +1,13 @@
 package com.dihuib.jdo;
 
-import javax.jdo.JDOException;
-import javax.jdo.PersistenceManager;
+//import javax.jdo.JDOException;
+//import javax.jdo.PersistenceManager;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.objectdb.Utilities;
+//import com.objectdb.Utilities;
 
 public class JDOTest {
 
@@ -21,7 +21,7 @@ public class JDOTest {
 
 	@Test
 	public void testHellWorld() {
-		PersistenceManager pm = Utilities.getPersistenceManager("objectdb/hello.odb");
+/*		PersistenceManager pm = Utilities.getPersistenceManager("objectdb/hello.odb");
 		pm.currentTransaction().begin();
 
 		Person person = new Person("Dihui","Bao",28);
@@ -32,7 +32,7 @@ public class JDOTest {
 			pm.close();
 		} catch (JDOException e) {
 			pm.currentTransaction().rollback();
-		}		
+		}	*/	
 
 	}
 

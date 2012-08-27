@@ -1,9 +1,9 @@
 package com.dihuib.jdo;
 
-import javax.jdo.annotations.PersistenceCapable;
+//import javax.jdo.annotations.PersistenceCapable;
 import javax.persistence.Entity;
 
-@PersistenceCapable
+//@PersistenceCapable
 @Entity
 public class Person {
 	
