@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.dihuib.h2.domain">
+	<class name="Person" table="person">
+	    <id name="id">
+	        <generator class="assigned"/>
+	    </id>
+	    
+	    <property name="firstName" column="firstname"></property>
+		<property name="lastName" column="lastname"></property>
+		
+		<set name="events" table="person_event">
+		    <key column="person_id"></key>
+		    <many-to-many column="event_id" class="Event"></many-to-many>
+		</set>
+	</class>	
+</hibernate-mapping>
+
+
