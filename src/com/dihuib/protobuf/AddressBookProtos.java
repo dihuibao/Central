@@ -13,6 +13,7 @@ public final class AddressBookProtos {
     
     // required string name = 1;
     boolean hasName();
+    
     String getName();
     
     // required int32 id = 2;

@@ -9,4 +9,21 @@ http://www.springframework.org/schema/jdbc http://www.springframework.org/schema
 	<jdbc:script location="classpath:com/dihuib/h2/test-data.sql"/>
 </jdbc:embedded-database>
 
+<bean id="localSessionFactoryBean" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+    <property name="dataSource" ref="dataSource"/>
+    <property name="mappingResources">
+      <list>
+        <value>com/dihuib/h2/domain/person.hbm.xml</value>
+        <value>com/dihuib/h2/domain/event.hbm.xml</value>
+      </list>
+    </property>
+    <property name="hibernateProperties">
+      <value>
+        hibernate.dialect=org.hibernate.dialect.H2Dialect
+        hibernate.show_sql=true
+        hibernate.current_session_context_class=thread
+      </value>
+    </property>
+</bean>
+
 </beans>

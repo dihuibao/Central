@@ -1,7 +1,7 @@
 package com.dihuib.aspectj;
 
 public aspect ProfilingAspect {
-	pointcut publicOperation() : execution(* MessageCommunicator.*(..));
+/*	pointcut publicOperation() : execution(* MessageCommunicator.*(..));
 
 	Object around() : publicOperation() {
 		long start = System.nanoTime();
@@ -10,5 +10,5 @@ public aspect ProfilingAspect {
 		System.out.println(thisJoinPointStaticPart.getSignature() + " took "
 				+ (end - start) + " nanoseconds");
 		return ret;
-	}
+	}*/
 }

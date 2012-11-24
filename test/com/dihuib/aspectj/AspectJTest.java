@@ -20,8 +20,8 @@ public class AspectJTest {
 		messageCommunicator.deliver("Hello World");
 		messageCommunicator.deliver("Allen", "Good Morning");
 
-		System.out.println("Last accessed time for messageCommunicator"
-				+ messageCommunicator.getLastAccessedTime());
+		//System.out.println("Last accessed time for messageCommunicator"
+		//		+ messageCommunicator.getLastAccessedTime());
 	}
 
 }

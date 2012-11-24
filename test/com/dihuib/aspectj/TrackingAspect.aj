@@ -1,7 +1,7 @@
 package com.dihuib.aspectj;
 
 public aspect TrackingAspect {
-	declare parents: MessageCommunicator implements AccessTracked;
+	/*declare parents: MessageCommunicator implements AccessTracked;
 	
 	private long AccessTracked.lastAccessedTime;
 	
@@ -18,7 +18,7 @@ public aspect TrackingAspect {
 	&& !execution(* AccessTracked.*(..))
 	&& this(accessTracked){
 		accessTracked.updateLastAccessedTime();
-	}
+	}*/
 	
 	private static interface AccessTracked {
 	}
